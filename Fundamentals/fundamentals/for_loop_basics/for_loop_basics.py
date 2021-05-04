@@ -29,14 +29,10 @@ print(total)
 for num in range (2018,0,-4):
     print (num)
 
+#FLexible Counter
 low_num = 0
-high_num = 100
-mult = 2
-for num in range(0, 100, 1):
-    if low_num % mult == 0 and high_num % mult == 0:
-        print(low_num)
-        print(high_num)
-        print(mult)
-    low_num +=1
-    high_num -=1
-    mult +=1
+high_num = 20
+mult = 3
+for num in range(low_num,high_num, 1):
+    if num % mult == 0:
+        print(num)
