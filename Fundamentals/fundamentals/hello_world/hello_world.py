@@ -1,15 +1,17 @@
-# 1. TASK: print "Hello World"
-print( "Hello World" )
-# 2. print "Hello Noelle!" with the name in a variable
-name = "Noelle"
-print( "Noelle", )	# with a comma
-##print( "Noelle" +)	# with a +, this line caused and error and I had to comment it out for the file to work.
-# 3. print "Hello 42!" with the number in a variable
-name = 42
-print( "Hello", name )	# with a comma
-print( "Hello" + name )	# with a +	-- this one should give us an error!
-# 4. print "I love to eat sushi and pizza." with the foods in variables
-fave_food1 = "sushi"
-fave_food2 = "pizza"
-print( "I love to eat {} and {}.".format(fave_food1, fave_food2) ) # with .format()
-print( f"I lovee to eat {fave_food1} and {fave_food2}" )# with an f string
+print("Hello World!") #Simple Hello World
+my_first_name = "Roy"
+print("Hello ", my_first_name)#Hello World with ,
+my_full_name = "Roy White!"
+print("Hello " + my_full_name)
+my_num = "17!"
+print("Hello", my_num)
+my_num = "17!"
+print("Hello " + my_num)
+fav_food_1 = "chicken"
+fav_food_2 = "ribs"
+print("I love to eat {} and {}!".format(fav_food_1, fav_food_2))
+fav_food_1 = "chicken"
+fav_food_2 = "ribs"
+print(f"I love to eat {fav_food_1} and {fav_food_2}!")
+
+
