@@ -26,7 +26,7 @@ def new_user():
     }
     user_id = mysql.query_db(query, data)
     
-    return redirect("/users")
+    return redirect("/users/<int:user_id>")
 
 @app.route("/users/<int:user_id>")
 def show_user(user_id):
@@ -73,7 +73,6 @@ def delete_user(user_id):
     }
     mysql.query_db(query,data)
     return redirect("/users")
-
 
 
 if __name__ == "__main__":
