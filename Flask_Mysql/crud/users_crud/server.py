@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, request
+from flask import Flask, render_template, redirect, request, url_for
 from mysqlconnection import connectToMySQL
 app=Flask(__name__)
 
@@ -18,7 +18,7 @@ def new_user_form():
 def new_user():
     mysql = connectToMySQL("users_schema")
     query = "INSERT INTO users(first_name, last_name, email, created_at, updated_at) \
-    VALUES(%(first_name)s,%(last_name)s,%(email)s,NOW(), NOW());"
+    VALUES(%(first_name)s,%(last_name)s,%(email)s,NOW(),NOW());"
     data = {
         "first_name": request.form['first_name'],
         "last_name": request.form['last_name'],
@@ -26,7 +26,7 @@ def new_user():
     }
     user_id = mysql.query_db(query, data)
     
-    return redirect("/users/<int:user_id>")
+    return redirect(url_for(".show_user", user_id = user_id))
 
 @app.route("/users/<int:user_id>")
 def show_user(user_id):
