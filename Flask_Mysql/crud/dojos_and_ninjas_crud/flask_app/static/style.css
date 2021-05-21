@@ -1,0 +1,23 @@
+.main_container{
+    height:1000px;
+    width:1000px;
+    display:flex;
+    justify-content: space-around;
+    align-items:initial;
+}
+.container1{
+    height:500px;
+    width:250px;
+    display: block;
+}
+input{
+    margin-top: 10px;
+}
+.container2{
+    height:400px;
+    width:300px;
+    display: block;
+}
+.add_ninja{
+    margin-top:40px;
+}
