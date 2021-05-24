@@ -32,10 +32,17 @@
         <body>
                 <h1>Welcome</h1>
                 <div class=container>
-                    {%for i in range(repeat):%}
-                    <div class=box></div>
-                    {%endfor%}
+                    {%if repeat > 3%}
+                        {%for i in range(repeat)%}
+                            <div class=box></div>
+                        {%endfor%}
+                    {%else%}
+                        {%for i in range(3)%}
+                        <div class=box></div>
+                        {%endfor%}
+                    {%endif%}
                 </div>
         </body>
+
 
 </html>

@@ -5,8 +5,8 @@
         <meta charset="utf-8" />
         <title>Playground</title>
         <style>
-            body {
-                
+            body{
+                background-color: gray;
             }
             h1 {
                 color: black;
@@ -33,7 +33,7 @@
         <body>
                 <h1>Welcome</h1>
                 <div class=container>
-                    {%for i in range(3):%}
+                    {%for i in range(repeat)%}
                     <div class=box></div>
                     {%endfor%}
                 </div>

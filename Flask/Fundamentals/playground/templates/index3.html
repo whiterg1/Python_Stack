@@ -32,9 +32,12 @@
         <body>
                 <h1>Welcome</h1>
                 <div class=container>
-                    {%for i in range(repeat):%}
                     <div class=box></div>
-                    {%endfor%}
+                    <div class=box></div>
+                    <div class=box></div>
+                        {%for i in range(repeat-3)%}
+                            <div class=box></div>
+                        {%endfor%}
                 </div>
         </body>
 
